@@ -30,7 +30,7 @@ jobs:
         uses: QAInsights/PerfAction@v5.6.2
         with:
           # JMeter test plan to execute
-           test-plan-path: './COSMOS_RushOrder_01252024.jmx'
+           test-plan-path: './COSMOS_RushOrder.jmx'
       - name: Upload Results
         uses: actions/upload-artifact@v3
         with:
