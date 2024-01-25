@@ -88,17 +88,6 @@
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config" enabled="false">
-          <stringProp name="filename">D:/Uday/apache-jmeter-5.5/apache-jmeter-5.5/COSMOS_Testdata/SC02_CreateOrder_data.csv</stringProp>
-          <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="delimiter">,</stringProp>
-          <stringProp name="variableNames">P_divisionId,P_customerId,P_productId,P_productId1,P_productId2,P_productId3</stringProp>
-          <boolProp name="randomOrder">true</boolProp>
-          <boolProp name="ignoreFirstLine">false</boolProp>
-          <boolProp name="rewindOnTheEndOfList">true</boolProp>
-          <boolProp name="independentListPerThread">false</boolProp>
-        </com.blazemeter.jmeter.RandomCSVDataSetConfig>
-        <hashTree/>
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
         <hashTree>
           <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="SC02_OMS_Launch" enabled="true">
@@ -4882,17 +4871,6 @@ f.close();</stringProp>
           <boolProp name="stopThread">false</boolProp>
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
-        <hashTree/>
-        <com.blazemeter.jmeter.RandomCSVDataSetConfig guiclass="com.blazemeter.jmeter.RandomCSVDataSetConfigGui" testclass="com.blazemeter.jmeter.RandomCSVDataSetConfig" testname="bzm - Random CSV Data Set Config" enabled="false">
-          <stringProp name="filename">D:/Uday/apache-jmeter-5.5/apache-jmeter-5.5/COSMOS_Testdata/SC02_CreateOrder_data.csv</stringProp>
-          <stringProp name="fileEncoding">UTF-8</stringProp>
-          <stringProp name="delimiter">,</stringProp>
-          <stringProp name="variableNames">P_divisionId,P_customerId,P_productId,P_productId1,P_productId2,P_productId3</stringProp>
-          <boolProp name="randomOrder">true</boolProp>
-          <boolProp name="ignoreFirstLine">false</boolProp>
-          <boolProp name="rewindOnTheEndOfList">true</boolProp>
-          <boolProp name="independentListPerThread">false</boolProp>
-        </com.blazemeter.jmeter.RandomCSVDataSetConfig>
         <hashTree/>
         <OnceOnlyController guiclass="OnceOnlyControllerGui" testclass="OnceOnlyController" testname="Once Only Controller" enabled="true"/>
         <hashTree>
