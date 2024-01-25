@@ -45,26 +45,58 @@
             <stringProp name="Argument.value">N3wT0d@y01042024</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
+          <elementProp name="P_username" elementType="Argument">
+            <stringProp name="Argument.name">P_username</stringProp>
+            <stringProp name="Argument.value">MEQ801AS</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_divisionId" elementType="Argument">
+            <stringProp name="Argument.name">P_divisionId</stringProp>
+            <stringProp name="Argument.value">33</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_customerId" elementType="Argument">
+            <stringProp name="Argument.name">P_customerId</stringProp>
+            <stringProp name="Argument.value">57</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="P_productId" elementType="Argument">
+            <stringProp name="Argument.name">P_productId</stringProp>
+            <stringProp name="Argument.value">1010005</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
         </collectionProp>
+        <stringProp name="TestPlan.comments">,P_productId,P_productId1,P_productId2,P_productId3</stringProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables-password" enabled="false">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="P_Password" elementType="Argument">
+            <stringProp name="Argument.name">P_Password</stringProp>
+            <stringProp name="Argument.value">N3wT0d@y01042024</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+        <stringProp name="TestPlan.comments">,P_productId,P_productId1,P_productId2,P_productId3</stringProp>
       </Arguments>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Create_RushOrders" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">startnextloop</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">10</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">5</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <longProp name="ThreadGroup.start_time">1370726934000</longProp>
         <longProp name="ThreadGroup.end_time">1370726934000</longProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">120</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
       </ThreadGroup>
       <hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - SC02 - Users" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - SC02 - Users" enabled="false">
           <stringProp name="filename">D:/Uday/apache-jmeter-5.5/apache-jmeter-5.5/COSMOS_Testdata/Users/SC02_CreateOrder_Users.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">P_username</stringProp>
@@ -76,7 +108,7 @@
           <stringProp name="shareMode">shareMode.all</stringProp>
         </CSVDataSet>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - SC02 - data" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config - SC02 - data" enabled="false">
           <stringProp name="filename">D:/Uday/apache-jmeter-5.5/apache-jmeter-5.5/COSMOS_Testdata/SC02_CreateOrder_data.csv</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="variableNames">P_divisionId,P_customerId,P_productId,P_productId1,P_productId2,P_productId3</stringProp>
@@ -4797,7 +4829,7 @@ f.close();</stringProp>
       </ResultCollector>
       <hashTree/>
       <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-        <boolProp name="ResultCollector.error_logging">true</boolProp>
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
         <objProp>
           <name>saveConfig</name>
           <value class="SampleSaveConfiguration">
